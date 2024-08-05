@@ -5,11 +5,11 @@ import profilePic from 'public/profile.jpg'
 export default function Page() {
   return (
     <section>
-      <div className='mb-8'>
+      <div className='mb-16'>
         <Image className='rounded-full'
           src={profilePic}
-          width={255}
-          height={255}
+          width={225}
+          height={225}
           alt="Picture of the author"
         />
       </div>
