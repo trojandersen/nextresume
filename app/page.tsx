@@ -1,10 +1,20 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
+import profilePic from 'public/profile.jpg'
 
 export default function Page() {
   return (
     <section>
+      <div className='mb-8'>
+        <Image className='rounded-full'
+          src={profilePic}
+          width={255}
+          height={255}
+          alt="Picture of the author"
+        />
+      </div>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        About Me
       </h1>
       <p className="mb-4">
         {`My name is Troj Andersen, I'm a developer currently studying a 2-year programme at Folkuniversitet in Gothenburg.
